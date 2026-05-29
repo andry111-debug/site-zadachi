@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f172a">
+  <title>Задачи выхода на строительную площадку</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">Локальный сайт</div>
+        <h1>Задачи выхода на строительную площадку</h1>
+        <p id="projectLine" class="muted"></p>
+      </div>
+      <div class="header-actions"><nav class="top-nav"><a href="index.html">Задачи</a><a href="rd.html">Справочник пакетов РД</a></nav><div id="modeBadge" class="mode-badge">статический сайт</div></div>
+    </header>
+
+    <main>
+      <section id="loginPanel" class="card login-card">
+        <h2>Вход сотрудника</h2>
+        <p class="muted">Выберите сотрудника и введите код. По умолчанию для сотрудников установлен код 1234, для администратора — 0000.</p>
+        <label>Сотрудник</label>
+        <select id="userSelect"></select>
+        <label>Код</label>
+        <input id="pinInput" type="password" placeholder="Введите код">
+        <button id="loginBtn" class="primary">Войти</button>
+        <div id="loginError" class="error hidden"></div>
+      </section>
+
+      <section id="workspace" class="hidden">
+        <div class="toolbar card">
+          <div>
+            <div class="eyebrow">Пользователь</div>
+            <div id="currentUser" class="strong"></div>
+          </div>
+          <div class="control-group">
+            <label>День</label>
+            <select id="daySelect"></select>
+          </div>
+          <div id="employeeFilterWrap" class="control-group hidden">
+            <label>Сотрудник</label>
+            <select id="employeeFilter"></select>
+          </div>
+          <button id="logoutBtn">Выйти</button>
+        </div>
+
+        <section class="stats-grid">
+          <div class="stat card"><span id="totalTasks">0</span><small>задач</small></div>
+          <div class="stat card"><span id="doneTasks">0</span><small>выполнено</small></div>
+          <div class="stat card"><span id="leftTasks">0</span><small>осталось</small></div>
+        </section>
+
+        <section id="tasksPanel" class="card"></section>
+        <section id="summaryPanel" class="card"></section>
+
+
+      </section>
+    </main>
+  </div>
+
+  <script src="js/tasks-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
