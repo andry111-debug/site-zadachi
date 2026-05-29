@@ -34,7 +34,7 @@ button.primary:hover { background: var(--accent-dark); }
 .hidden { display: none !important; }
 .error { color: var(--danger); margin-top: 12px; }
 .mode-badge { border: 1px solid var(--border); border-radius: 999px; padding: 8px 12px; color: var(--muted); background: var(--card-soft); white-space: nowrap; }
-.toolbar { display: grid; grid-template-columns: 1fr 220px 260px auto; gap: 16px; align-items: end; margin-bottom: 16px; }
+.toolbar { display: grid; grid-template-columns: 220px 260px auto; gap: 16px; align-items: end; justify-content: start; margin-bottom: 16px; }
 .control-group label { margin-top: 0; }
 .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 16px; }
 .stat span { display: block; font-size: 30px; font-weight: 800; }
@@ -183,3 +183,5 @@ button.primary:hover { color: #111827; }
   .project-subtitle { font-size: 14px; }
   .clean-login-card { margin-top: 12px; }
 }
+
+.user-footer { margin-top: 16px; }
