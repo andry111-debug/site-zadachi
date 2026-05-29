@@ -9,19 +9,16 @@
 </head>
 <body>
   <div class="app-shell">
-    <header class="topbar">
-      <div>
-        <div class="eyebrow">Локальный сайт</div>
+    <header class="topbar clean-home-header">
+      <div class="clean-title-block">
         <h1>Задачи выхода на строительную площадку</h1>
-        <p id="projectLine" class="muted"></p>
+        <p id="projectLine" class="muted project-subtitle"></p>
       </div>
-      <div class="header-actions"><nav class="top-nav"><a href="index.html">Задачи</a><a href="rd.html">Справочник пакетов РД</a></nav><div id="modeBadge" class="mode-badge">статический сайт</div></div>
     </header>
 
     <main>
-      <section id="loginPanel" class="card login-card">
-        <h2>Вход сотрудника</h2>
-        <p class="muted">Выберите сотрудника и введите код. По умолчанию для сотрудников установлен код 1234, для администратора — 0000.</p>
+      <section id="loginPanel" class="card login-card clean-login-card">
+        <h2>Вход</h2>
         <label>Сотрудник</label>
         <select id="userSelect"></select>
         <label>Код</label>
@@ -55,8 +52,6 @@
 
         <section id="tasksPanel" class="card"></section>
         <section id="summaryPanel" class="card"></section>
-
-
       </section>
     </main>
   </div>

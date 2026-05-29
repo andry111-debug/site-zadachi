@@ -1,5 +1,5 @@
 let DATA = window.TASK_DATA;
-const STORAGE_PREFIX = 'N_147_';
+const STORAGE_PREFIX = 'N_149_';
 const state = {
   user: null,
   progress: {},

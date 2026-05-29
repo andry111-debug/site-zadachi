@@ -161,3 +161,25 @@ select:focus, input:focus, textarea:focus, button:focus { outline: 2px solid rgb
 .task-result span { color: #ffffff; }
 button.primary { color: #1f2937; }
 button.primary:hover { color: #111827; }
+
+
+/* Clean landing page requested for N_149 */
+.clean-home-header {
+  justify-content: center;
+  text-align: center;
+  margin: 18px auto 18px;
+}
+.clean-title-block { width: 100%; }
+.project-subtitle {
+  max-width: 820px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.45;
+}
+.clean-login-card h2 { text-align: center; }
+.clean-login-card { margin-top: 28px; }
+@media (max-width: 760px) {
+  .clean-home-header { margin: 8px auto 12px; }
+  .project-subtitle { font-size: 14px; }
+  .clean-login-card { margin-top: 12px; }
+}
